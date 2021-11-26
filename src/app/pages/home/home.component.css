@@ -1,0 +1,40 @@
+/* Header */
+.features .features-wrapper .feature .feature-title .title {
+  background: var(--color-brown);
+  color: var(--color-darkbeige);
+  border-radius: 8px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.features {
+  background: var(--color-beige);
+  padding-top: 0;
+}
+.features .features-wrapper .feature .feature-content {
+  background: var(--color-lightbeige);
+  border-radius: 8px;
+}
+.features .container {
+  padding: 0 !important;
+}
+.features .features-wrapper .feature .feature-content .text {
+  font-size: 14px;
+  color: var(--color-brown);
+  font-weight: 500;
+}
+.features .features-wrapper .feature-column .title {
+  color: var(--color-lightbrown);
+}
+.features .features-wrapper .feature-column .subtitle {
+  color: var(--color-lightolive);
+  font-weight: 600;
+}
+.features .features-wrapper .features-cards {
+  background: var(--color-darkbeige);
+  border-radius: 20px;
+}
+.features .features-wrapper .features-cards .features-card {
+  border: 2px dashed var(--color-white);
+  border-radius: 10px;
+  padding: 20px 25px;
+}

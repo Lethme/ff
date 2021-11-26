@@ -1,0 +1,95 @@
+<app-header [features]="features"></app-header>
+
+<section id="features" class="features xs:ptb-30 lg:pt-0 lg:pb-30">
+    <div class="container xs:p-0">
+        <div class="features-container">
+            <div class="features-wrapper xs:flex-column sm:flex-row sm:flex-wrap xs:flex-justify-start xs:flex-align-center">
+                <div class="feature xs:mt-15 xs:mb-15 lg:mt-0 xs:col-24 sm:col-12 lg:col-6" *ngFor="let feature of features">
+                    <div class="feature-title xs:db lg:dn xs:plr-10">
+                        <p class="title xs:ptb-5 xs:plr-15">{{ feature.title }}</p>
+                    </div>
+                    <div class="feature-content xs:mlr-10 xs:ptb-5 xs:plr-15">
+                        <div class="feature-img xs:ptb-10">
+                            <img [src]="feature.imageUrl" class="xs:w-100" alt="Placeholder">
+                        </div>
+                        <p class="text">{{ feature.text }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-wrapper features-content xs:flex-column lg:flex-row lg:flex-wrap xs:flex-justify-sb xs:flex-align-start xs:pt-10 xs:pb-30">
+            <div class="feature-column xs:col-24 xxl:col-12 xs:plr-25">
+                <h2 class="title">Lorem, ipsum dolor.</h2>
+                <p class="subtitle xs:text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi consequatur eaque sit quam eos odit natus amet corrupti laborum.
+                </p>
+                <p class="text xs:mb-0 xs:text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veniam quasi consequatur necessitatibus impedit ad minima voluptates unde tenetur. Vitae, illum assumenda debitis laudantium quo id corrupti atque doloremque itaque.
+                </p>
+                <p class="text xs:text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perferendis sint aut omnis excepturi delectus, totam, qui rerum aliquam alias ratione provident, adipisci sed fuga. Libero cupiditate minus fugiat, est doloribus nihil.
+                </p>
+                <p class="text xs:text-justify">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet</a> consectetur, adipisicing elit. Autem ut quia reiciendis amet officia expedita dolor, eum, obcaecati eius consequuntur maxime ipsum labore eveniet exercitationem, placeat optio
+                    odio cupiditate provident recusandae dolore deserunt laboriosam numquam deleniti! Reiciendis vel at enim.
+                </p>
+                <a href="#" class="btn btn-fluid">Read more</a>
+            </div>
+            <div class="feature-column feature-list xs:col-24 lg:col-16 xl:col-18 xxl:col-6 xs:plr-25 xs:mt-20 xxl:mt-0">
+                <h2 class="title">Lorem, ipsum dolor.</h2>
+                <p class="subtitle xs:text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sequi.
+                </p>
+                <p class="text xs:text-justify">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad veniam quae quos totam rerum sunt.
+                </p>
+                <ul class="list">
+                    <li class="list-item">Lorem, ipsum dolor.</li>
+                    <li class="list-item">
+                        <a href="#" class="link">Lorem ipsum dolor sit</a>, amet consectetur adipisicing elit. Libero, saepe.
+                    </li>
+                    <li class="list-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-item">Lorem, ipsum.</li>
+                    <li class="list-item">Lorem, ipsum dolor.</li>
+                </ul>
+                <a href="#" class="btn btn-fluid">Read more</a>
+            </div>
+            <div class="feature-column feature-form xs:col-24 lg:col-8 xl:col-6 xs:plr-25 xs:mt-20 xxl:mt-0">
+                <h2 class="title">Lorem, ipsum.</h2>
+                <form (submit)="loginSubmit()">
+                    <div class="input-field xs:mtb-10">
+                        <label class="subtitle" for="login">Username</label>
+                        <input [(ngModel)]="userData.login" type="text" name="login" id="login" pattern="^(?=.*[A-Za-z0-9]$)[A-Za-z][A-Za-z\d.-]{0,19}$" required>
+                    </div>
+                    <div class="input-field xs:mtb-10">
+                        <label class="subtitle" for="password">Password</label>
+                        <input [(ngModel)]="userData.password" type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                    </div>
+                    <div class="checkbox-field xs:mtb-15">
+                        <input [(ngModel)]="userData.remember" type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-fluid">Log In</button>
+                    <a href="#" class="link xs:db xs:mt-10">Forgot password?</a>
+                </form>
+            </div>
+        </div>
+        <div class="features-wrapper xs:flex-row xs:flex-justify-sb xs:flex-align-center">
+            <div class="features-cards xs:flex-column lg:flex-row lg:flex-wrap xs:flex-justify-sb xs:flex-align-center xs:p-20">
+                <div *ngFor="let card of cards" class="features-card-wrapper xs:col-24 lg:col-12 xl:col-6 xs:p-5">
+                    <div class="features-card">
+                        <div class="block-title xs:flex-row xs:flex-justify-sb xs:flex-align-start">
+                            <h2 class="title">{{ card.title }}</h2>
+                            <img [src]="card.imageUrl" alt="">
+                        </div>
+                        <div class="block-text">
+                            <p class="text">{{ card.text }}</p>
+                            <p class="text">
+                                <a [href]="card.link" class="link">Read on to learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

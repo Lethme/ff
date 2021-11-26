@@ -1,0 +1,36 @@
+
+.footer {
+    background: var(--color-brown);
+    color: var(--color-white);
+}
+
+.nav .nav-item:last-child:after {
+    content: '';
+    display: none;
+}
+
+@media (min-width: 0) {
+    .navbar-nav {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: unset;
+        margin-bottom: 0;
+    }
+    .nav .nav-item {
+        position: relative;
+    }
+    .nav .nav-item::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 50%;
+        width: 2px;
+        background: var(--color-darkbeige);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

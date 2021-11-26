@@ -1,0 +1,61 @@
+.navbar {
+  border-bottom: 5px solid transparent;
+  background-image: linear-gradient(var(--color-brown), var(--color-brown)), linear-gradient(to bottom right, transparent 50.5%, var(--color-brown) 50.5%), linear-gradient(to bottom left, transparent 50.5%, var(--color-brown) 50.5%), linear-gradient(to top right, transparent 50.5%, var(--color-brown) 50.5%), linear-gradient(to top left, transparent 50.5%, var(--color-brown) 50.5%);
+  background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+  background-size: auto auto, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+  background-clip: padding-box, border-box, border-box, border-box, border-box;
+  background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+.navbar .navbar-collapse {
+  flex-grow: unset;
+}
+.navbar .navbar-brand {
+  color: var(--color-white);
+  transition: all 0.1s linear;
+}
+@media (min-width: 992px) {
+  .navbar .nav-item {
+    position: relative;
+  }
+  .navbar .nav-item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 50%;
+    width: 2px;
+    background: var(--color-darkbeige);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.navbar .navbar-toggler.uncollapsed + .navbar-collapse .nav-item::after,
+.navbar .navbar-collapse.collapsing .nav-item::after,
+.navbar .navbar-collapse .navbar-nav .nav-item:last-child::after {
+  display: none;
+}
+.navbar .navbar-toggler {
+  padding: 0;
+  border: 2px solid transparent;
+}
+.navbar .navbar-toggler .navbar-toggler-icon-fa::before {
+  content: "\f0c9";
+  font-family: FontAwesome;
+  color: var(--color-white);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .navbar-toggler:hover > .navbar-toggler-icon-fa::before,
+.navbar .navbar-toggler:active > .navbar-toggler-icon-fa::before,
+.navbar .navbar-toggler.uncollapsed > .navbar-toggler-icon-fa::before {
+  color: var(--color-darkbeige);
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:active,
+.navbar .navbar-brand:focus {
+  color: var(--color-darkbeige);
+}

@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    /* Original Colors */
+    --color-brown: #633327;
+    --color-beige: #E6DAC2;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: #5F8520;
+    /* Light Colors */
+    --color-lightbrown: #B15E4B;
+    --color-lightolive: #A28553;
+    --color-lightbeige: #F4EDE3;
+    /* Dark Colors */
+    --color-darkbeige: #D6BD95;
+    --color-darkolive: #80704B;
+    /* Fonts */
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Styles */
+
+html, body {
+    font-family: var(--font-roboto);
+    background: var(--color-beige);
+}
+
+.subtitle {
+    color: var(--color-darkolive);
+    padding: 5px 0;
+}
+
+a.link,
+a.link:visited {
+    color: var(--color-lightbrown);
+    transition: all .1s linear;
+}
+
+a.link:hover,
+a.link:active {
+    color: var(--color-brown);
+}
+
+.btn {
+    background: var(--color-lightbrown) !important;
+    color: var(--color-white) !important;
+    border-radius: 8px !important;
+    padding: 8px 25px !important;
+    transition: all .1s linear !important;
+    cursor: pointer !important;
+}
+
+.btn:hover,
+.btn:active {
+    color: var(--color-white) !important;
+    background: var(--color-brown) !important;
+}
+
+ul.list {
+    list-style: none;
+}
+
+ul.list li.list-item {
+    position: relative;
+}
+
+ul.list li.list-item::before {
+    position: absolute;
+    content: '\f00c';
+    font-family: FontAwesome;
+    transform: translateX(-150%);
+    color: var(--color-green);
+}
+
+div.input-field input {
+    display: block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    outline: none;
+    color: var(--color-lightbrown);
+    transition: all .1s linear;
+}
+
+div.input-field input:hover,
+div.input-field input:active,
+div.input-field input:valid {
+    border: 2px solid var(--color-lightbrown);
+}
+
+div.checkbox-field input[type="checkbox"] {
+    display: none;
+}
+
+div.checkbox-field label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-brown);
+    transition: all .1s linear;
+}
+
+div.checkbox-field label::before {
+    content: '';
+    font-family: FontAwesome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 5px;
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1),
+                inset 0 -2px 4px 1px rgba(0, 0, 0, .1),
+                inset 0 2px 4px 1px rgba(255, 255, 255, .8);
+    background: var(--color-lightbeige);
+}
+
+div.checkbox-field input[type="checkbox"]:checked + label::before {
+    content: '\f00c';
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    .btn-fluid { width: 100%; }
+    div.input-field input { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+::-webkit-scrollbar {
+  width: .6em;
+  height: .6em;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-lightbeige);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-lightbrown);
+  outline: 1px solid var(--color-brown);
+  border-radius: 2em;
+}

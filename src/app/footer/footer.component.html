@@ -1,0 +1,16 @@
+<footer class="footer mt-auto py-3 sticky-footer">
+    <div class="container text-center">
+        <div class="footer-wrapper flex-column">
+            <div class="nav xs:flex-column xs:flex-justify-center xs:flex-align-center xs:col-24">
+                <ul class="navbar-nav xs:flex-column lg:flex-row xs:flex-justify-center xs:flex-align-center xs:col-24">
+                    <li class="nav-item" *ngFor="let link of links">
+                        <app-nav-link [link]="link"></app-nav-link>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright col-12">
+                <p class="text">FamilyFarm &#169; 2013. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>

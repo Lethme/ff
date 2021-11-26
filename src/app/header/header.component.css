@@ -1,0 +1,34 @@
+.home {
+  background: url('../../assets/img/header/bg.jpg') center no-repeat, var(--color-darkbeige);
+  background-size: cover;
+  position: relative;
+}
+.home .header-wrapper {
+  text-align: center;
+}
+.home .header-wrapper .title {
+  color: var(--color-white);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+.home .header-wrapper .subtitle {
+  color: var(--color-darkolive);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 0;
+}
+.home .container {
+  height: 100%;
+  position: relative;
+}
+.home .features-titles {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.home .features-titles .feature-title .title {
+  background: var(--color-brown);
+  color: var(--color-darkbeige);
+  border-radius: 8px;
+  margin-bottom: 0;
+  font-size: 18px;
+}

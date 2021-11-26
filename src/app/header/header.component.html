@@ -1,0 +1,13 @@
+<header id="home" class="home">
+    <div class="container xs:pb-50 xs:pt-80 lg:pb-80 lg:pt-100">
+        <div class="header-wrapper">
+            <h1 class="title xs:fs-40 sm:fs-48 md:fs-60 lg:fs-72">FamilyFarm</h1>
+            <h3 class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing</h3>
+        </div>
+        <div *ngIf="features && features?.length" class="features-titles xs:dn lg:db lg:flex-row lg:flex-justify-sb lg:flex-align-center xs:b-0">
+            <div class="feature-title xs:plr-10 xs:col-6" *ngFor="let feature of features">
+                <p class="title xs:ptb-5 xs:plr-15">{{ feature.title }}</p>
+            </div>
+        </div>
+    </div>
+</header>

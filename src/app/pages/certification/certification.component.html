@@ -1,0 +1,14 @@
+<app-header></app-header>
+<section class="cert">
+    <div class="container xs:ptb-30 xs:flex-column sm:flex-row sm:flex-wrap xs:flex-justify-start xs:flex-align-start">
+        <a *ngFor="let cert of certificates" [href]="cert.imageUrl" class="fancybox xs:p-10 xs:col-24 sm:col-12 lg:col-6 xxl:col-4" data-fancybox="certificate">
+            <div class="cert-wrapper">
+                <div class="cert-inner xs:p-10">
+                    <h2 class="title">{{ cert.title }}</h2>
+                    <img [src]="cert.thumbnailUrl" class="xs:w-100 xs:mtb-5" alt="">
+                    <p class="subtitle">{{ cert.subtitle }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
