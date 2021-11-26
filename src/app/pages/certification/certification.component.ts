@@ -14,16 +14,16 @@ interface Certificate {
 })
 export class CertificationComponent implements OnInit {
   certificates: Array<Certificate> = [
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/1.jpg', thumbnailUrl: '../../../assets/img/cert/1.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/2.jpg', thumbnailUrl: '../../../assets/img/cert/2.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/3.jpg', thumbnailUrl: '../../../assets/img/cert/3.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/4.jpg', thumbnailUrl: '../../../assets/img/cert/4.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/5.jpg', thumbnailUrl: '../../../assets/img/cert/5.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/6.jpg', thumbnailUrl: '../../../assets/img/cert/6.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/7.jpg', thumbnailUrl: '../../../assets/img/cert/7.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/8.jpg', thumbnailUrl: '../../../assets/img/cert/8.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/9.jpg', thumbnailUrl: '../../../assets/img/cert/9.jpg' },
-    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: '../../../assets/img/cert/10.jpg', thumbnailUrl: '../../../assets/img/cert/10.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/1.jpg', thumbnailUrl: 'assets/img/cert/1_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/2.jpg', thumbnailUrl: 'assets/img/cert/2_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/3.jpg', thumbnailUrl: 'assets/img/cert/3_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/4.jpg', thumbnailUrl: 'assets/img/cert/4_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/5.jpg', thumbnailUrl: 'assets/img/cert/5_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/6.jpg', thumbnailUrl: 'assets/img/cert/6_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/7.jpg', thumbnailUrl: 'assets/img/cert/7_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/8.jpg', thumbnailUrl: 'assets/img/cert/8_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/9.jpg', thumbnailUrl: 'assets/img/cert/9_tn.jpg' },
+    { title: 'Lorem', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi?', imageUrl: 'assets/img/cert/10.jpg', thumbnailUrl: 'assets/img/cert/10_tn.jpg' },
   ]
   constructor() { }
 
